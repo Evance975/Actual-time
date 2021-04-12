@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>js practice</title>
+	<style type="text/css">
+		html{
+            
+    		background: black;
+    		background-size: auto;
+    		background-repeat: no-repeat;
+    		font-family: cursive;
+    		text-align: center;
+    		font-size: 100px;
+    		text-decoration: overline;
+    		text-decoration: underline;
+    		color: green;
+    		text-shadow: 20px 20px 18px red;
+		}
+		body{
+			background-image: url("C:\Users\hp\Documents\img\download (4).jpg");
+    		background-size: cover;
+
+		}
+		.clock{
+			width: 70rem;
+			height: 30rem;
+			border: 500px green;
+			border-radius: 10px;
+			position: relative;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<header>
+			<h1 style="color: green;">DARK CLOCK</h1>
+		</header>
+		<h4>THIS IS IT</h4>
+	
+	</div>
+	<div>
+	<script>
+
+		function printTime(){
+			var d = new Date();
+			var hours = d.getHours();
+			var mins = d.getMinutes();
+			var secs = d.getSeconds();
+			document.body.innerHTML=hours+":"+mins+":"+secs;
+		}
+		setInterval(printTime,1000);
+
+		
+	</script>
+    </div>
+</body>
+</html>
